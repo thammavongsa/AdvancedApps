@@ -17,4 +17,12 @@ public class GetterAndSetter {
 			this.age =120;
 		}
 	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
 }

@@ -2,15 +2,15 @@ package packageYield;
 
 public class Yield {
 
-	public int addNums(int x, int y){
-		return x + y;
+	public double yieldOne(double x, double y, double z){
+		return z * (1 + x);
 	}
 		
-	public int addNums(int x, int y, int z){
+	public double yieldTwo(double x, double y, double z){
 		return x + y;
 	}
 	
-	public double addNums(double x, double y){
+	public double yieldThree(double x, double y, double z){
 		return x + y;
 	}
 	
