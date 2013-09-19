@@ -1,14 +1,24 @@
-package packageYield;
+                //import to access Scanner class
 
-import packageYield.Yield;
+class Amount1
+{
+    public static void main(String args[])
+    {
+        float a,prin,r, y, prod=1,p, principle;
+        System.out.println("Enter principle amount");
+        //Scanner object created
+                         //Scanner function for taking Integer input from user
+        for(r=3; r<=10; r++)
+        {
+            prod=1;
+            y=(1+r/100);                          
 
-public class calcYield {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		Yield ol = new Yield ();
-		System.out.println(ol.addNums(2, 3));
-		System.out.println(ol.addNums(2, 3, 5));
-		System.out.println(ol.addNums(2.6, 3.5));
-	}
+            for(int t=1; t<=10; t++)
+            {
+                prod=prod*y;                   
+            }
+        a=p*prod;
+        System.out.println("Amount for rate "+r+"% is "+a);
+        }
+    }
 }
