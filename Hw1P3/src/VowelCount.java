@@ -43,7 +43,7 @@ public class VowelCount {
 		System.out.printf("The total number of vowels in the sentence:%7d\n",n);
 		System.out.printf("The total number of letters in the sentence:%6d\n",letters);
         System.out.printf("The total number of characters in the sentence:%3d\n",length);
-        System.out.println("Without Vowels = ppl hs yt t confrm rmrs");
+        System.out.println("Without Vowels = ppl hs yt t confrm rmrs");// You mean this way? or... ? hm
         
 	}
 
