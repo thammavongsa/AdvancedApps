@@ -2,49 +2,41 @@
 public class VowelCount {
 	public static void main(String[] args){
 		String input;
-		char ch;
-		char letA = 'A', letE = 'E', letI = 'I', letO = 'O', letU= 'U';
+		int vowelCount = 0;
 		input = "Apple has yet too confirm rumors.";
-		int length = input.length();
-		System.out.println(input);
+		char[] characters2 = new char[input.length()];
+		input = input.toLowerCase();
 		char[] characters = input.toCharArray();
-		
-		int n = 0;
-		
-		for (int i = 0; i <characters.length; i++)
-		{
-			ch = input.charAt(i);
-			
-			if (    (ch == 'A')   ||  (ch == 'a')
-				||  (ch == 'E')   ||  (ch == 'e')
-				||  (ch == 'I')   ||  (ch == 'i')
-				||  (ch == 'O')   ||  (ch == 'o')
-				||  (ch == 'U')   ||  (ch == 'u')  )
-				n++;
-		}
-		for	( int i = 0; i < characters.length; i++ )
-		{
-			if(input.charAt(i) == letA ) {
-			} else if(input.charAt(i) == letE) {
-			} else if(input.charAt(i) == letI) {
-			} else if(input.charAt(i) == letO) {
-			} else if(input.charAt(i) == letU) {
-			}
-				
-		}
-		
-		int letters = 0;
-		for (int i = 0; i <characters.length; i++)
-		{
-			if(Character.isLetter(characters[i]))
-				letters++;
-		}
 
-		System.out.printf("The total number of vowels in the sentence:%7d\n",n);
-		System.out.printf("The total number of letters in the sentence:%6d\n",letters);
-        System.out.printf("The total number of characters in the sentence:%3d\n",length);
-        System.out.println("Without Vowels = ppl hs yt t confrm rmrs");// You mean this way? or... ? hm
+		
+		for (int i = 0; i< characters.length; ++i)
+		{
+			if (isVowel(characters[i]))
+			{
+				vowelCount++;
+			}
+			else
+			{
+				characters2[i] = characters[i];
+			}
+		}
+		for(int i=0;i<characters2.length;++i) {
+			//if(characters2[i] null)
+	        System.out.print(characters2[i]);// You mean this way? or... ? hm	
+		}
+		System.out.print("\n");
+
+        System.out.println(input);
+		System.out.println("Total number of vowels is: " + vowelCount);
         
+	}
+
+	private static boolean isVowel(char charAt) {
+		// TODO Auto-generated method stub		
+		if (charAt == 'a' || charAt == 'e' || charAt == 'i' || charAt == 'o' || charAt == 'u')
+			return true;
+		else 
+			return false;
 	}
 
 

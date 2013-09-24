@@ -1,10 +1,12 @@
-
 public class MegaBall {
-	public int generateBallNumber(int c)
+	public void generateBallNumber()
 	{
-		
-			int m = (int) ((50 * Math.random()) + 1);
-			return m;
-		
+		for(int mega= 4; mega < 5; mega++)
+		{
+			 System.out.println(Math.round(Math.random()*50));
+		}
 	}
+	
 }
+		
+		

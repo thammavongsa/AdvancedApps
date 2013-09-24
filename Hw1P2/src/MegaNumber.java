@@ -1,20 +1,33 @@
 
 public class MegaNumber {
-
-
-		public int generateMegaNumbers(int a,int b) 
-		{
-			int[] numbers = new int[4]; 
-			int i = 0;
-			while( i < 5)
+	public void generateMegaNumbers(){	
+			final int t = 5;
+			final int n = 50;
+			
+			int mn[] = new int[t];
+			int l = 1;
+			
+			while( l <= 1)
 			{
-				int generateMegaNumbers = 0;
-				generateMegaNumbers= 1 + (int)(Math.random()*50);
-				numbers[i] = (generateMegaNumbers);
-				i++;
-			}
-			return (i);
+			for (int count = 0; count < mn.length; count++){
+				int number;
+			do{
+					mn[count] = (int) (n * Math.random() + 1);
+					number = 0;
+					while(mn[count]!=mn[number])
+					{		
+						number++;
+				    }
+				}while(count != number);
+				System.out.println(mn[number]);
+			   }
+			     ++l;
+			     
+		    }
+			
 		}
 }
+
+
 
 
